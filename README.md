@@ -1,112 +1,57 @@
-# Git Workshop Commands by Manjula
+# Git Commands Used in This Workshop
+By Manjula
 
-This README.md file contains all the Git commands I used in my workshop along with explanations.  
-It demonstrates both basic and advanced Git skills.
-
----
-
-## My Project Files
-
-- README.md    This file, contains all commands and explanations.  
-- notes.txt    Notes created during the workshop.  
-- .gitignore   Git ignore file to exclude unnecessary,configuration files.  
+This README lists only the Git commands that I actually used during my Git workshop task.
 
 ---
-
-## Basic Git Commands
 
 1. `git init`  
-   Initializes a new Git repository in the current folder.
+   Initialize a new Git repository.
 
 2. `git status`  
-   Shows which files are staged, unstaged, or untracked.
+   Check the status of files (tracked, untracked, staged).
 
-3. `git add <file>`  
-   Stage changes in a file for the next commit. Example: `git add README.md`.
+3. `git add .`  
+   Stage all files in the current directory.
 
-4. `git add .`  
-   Stage all changes in the current directory.
+4. `git add notes.txt`  
+   Stage changes made specifically to notes.txt.
 
 5. `git commit -m "message"`  
-   Commit staged changes with a descriptive message. Example: `git commit -m "Initial commit"`.
+   Commit staged files with a message.
 
-6. `git log`  
-   Shows the commit history for the repository.
+6. `git remote add origin <repository-url>`  
+   Connect local repository to GitHub remote repository.
 
-7. `git log --oneline`  
-   Shows the commit history in a short form (one line per commit).
+7. `git branch -M main`  
+   Rename the branch to main.
 
-8. `git blame <file>`  
-   Shows line-by-line history of a file, including who changed each line.
+8. `git push -u origin main`  
+   Push local commits to GitHub and set upstream branch.
 
-9. `git show <commit-hash>`  
-   Shows details of a specific commit, including changes.
+9. `git push`  
+   Push latest commits to the remote repository.
 
-10. `git remote add origin <url>`  
-    Adds a remote repository URL.
+10. `git clone <repository-url>`  
+    Clone an existing repository from GitHub.
 
-11. `git branch -M main`  
-    Renames the current branch to `main`.
+11. `git remote remove origin`  
+    Remove the existing remote repository link.
 
-12. `git push -u origin main`  
-    Pushes the local branch to remote and sets upstream.
+12. `git remote add origin <new-repository-url>`  
+    Add a new remote repository.
 
-13. `git clone <url>`  
-    Clones a remote repository to your computer.
+13. `git checkout -b feature-update`  
+    Create a new branch and switch to it.
 
-14. `git checkout -b <branch>`  
-    Creates a new branch and switches to it.
+14. `git checkout main`  
+    Switch back to the main branch.
 
-15. `git merge <branch>`  
-    Merges another branch into the current branch.
+15. `git merge feature-update`  
+    Merge the feature-update branch into main.
 
 16. `git tag v1.0`  
-    Adds a tag to the current commit (used for releases).
+    Create a tag for the current commit.
 
 17. `git push origin v1.0`  
-    Pushes a tag to the remote repository.
-
----
-
-## Advanced Git Commands
-
-1. `git stash`  
-   Temporarily saves changes that are not ready to commit.
-
-2. `git stash pop`  
-   Restores stashed changes back into the working directory.
-
-3. `git diff`  
-   Shows changes not yet staged for commit.
-
-4. `git diff --staged`  
-   Shows changes that are staged for commit.
-
-5. `git fetch`  
-   Downloads commits from remote without merging automatically.
-
-6. `git pull`  
-   Fetches and merges changes from the remote branch.
-
-7. `git reset --soft <commit>`  
-   Moves HEAD to a previous commit but keeps changes staged.
-
-8. `git reset --hard <commit>`  
-   Moves HEAD to a previous commit and discards all changes.
-
-9. `git cherry-pick <commit>`  
-   Applies a commit from another branch onto the current branch.
-
-10. `git log --graph --all --decorate`  
-    Displays a visual representation of commit history with branches and merges.
-
-11. `git reflog`  
-    Shows all movements of HEAD, even “lost” commits.
-
-12. `git shortlog`  
-    Summarizes commits by author.
-
----
-
-> All commands above were executed by **Manjula** during the Git Workshop.  
-> Files tracked include `README.md`, `notes.txt`, and `.gitignore`.
+    Push the tag to GitHub.
